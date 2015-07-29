@@ -1,0 +1,32 @@
+def SpringVersion = '4.0.1.RELEASE'
+def JettyVersion = '8.1.14.v20131031'
+
+apply {
+    plugin 'java'
+    plugin 'idea'
+}
+
+version = '1.0' //property
+
+// Uses JDK 8
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+//    maven { url "http://192.168.0.150:8081/nexus/content/groups/public/" }
+    maven { url "http://maven.oschina.net/content/groups/public/" }
+
+}
+
+
+//Project dependencies
+dependencies {
+    compile 'redis.clients:jedis:2.6.0'
+    compile 'mysql:mysql-connector-java:5.1.28'
+    compile "org.springframework:spring-web:${SpringVersion}"
+    compile "org.springframework:spring-webmvc:${SpringVersion}"
+    compile "org.eclipse.jetty:jetty-server:${JettyVersion}"
+    compile "org.mybatis:mybatis:3.2.7"
+    compile "org.mybatis:mybatis-spring:1.2.2"
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
