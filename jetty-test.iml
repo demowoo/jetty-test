@@ -36,5 +36,8 @@
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-continuation:8.1.14.v20131031" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-http:8.1.14.v20131031" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:8.1.14.v20131031" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-servlet:8.1.14.v20131031" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-security:8.1.14.v20131031" level="project" />
+    <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.2.1" level="project" />
   </component>
 </module>
