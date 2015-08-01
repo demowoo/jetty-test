@@ -18,6 +18,10 @@ targetCompatibility = 1.8
 //    }
 //}
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
+}
+
 repositories {
 //    maven { url "http://192.168.0.150:8081/nexus/content/groups/public/" }
 //    maven { url "http://repository.sonatype.org/content/groups/public/" }
